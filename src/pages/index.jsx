@@ -77,40 +77,37 @@ const Index = () => (
         <BigTitle>
           <img src={hack3} style={logoStyle}/>
         </BigTitle>
-        <Subtitle style={subtitleStyle}>Experience Innovation</Subtitle>
+        <Subtitle style={subtitleStyle}>
+          Experience Innovation <br/>
+          A new hackathon in the Boston area
+        </Subtitle>
       </Hero>
       <Projects offset={1}>
-        <Title>Projects</Title>
+        <Title>Important Info</Title>
         <ProjectsWrapper>
           <ProjectCard
-            title="Freiheit"
-            link="https://www.behance.net/gallery/58937147/Freiheit"
-            bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
-          >
-            This project is my entry to Adobe's #ChallengeYourPerspective
-            contest.
-          </ProjectCard>
-          <ProjectCard
-            title="Harry Potter"
-            link="https://www.behance.net/gallery/52915793/Harry-Potter"
+            title="October 2019"
             bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
           >
-            I entered the DOCMA 2017 award with this Harry Potter inspired
-            image.
+            Exact date will be determined
           </ProjectCard>
           <ProjectCard
-            title="Tomb Raider"
-            link="https://www.behance.net/gallery/43907099/Tomb-Raider"
+            title="Boston Area"
             bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
           >
-            Recreation of a Tomb Raider Wallpaper (Fan Art)
+            Exact location to be determined
           </ProjectCard>
           <ProjectCard
-            title="Eagle"
-            link="https://www.behance.net/gallery/38068151/Eagle"
+            title=">150 Hackers"
             bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
           >
-            A fantasy image manipulation relocating the habitat of wild animals.
+            Live headcount will be posted
+          </ProjectCard>
+          <ProjectCard
+            title="$X of Prizes"
+            bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
+          >
+            Prizes willl be posted
           </ProjectCard>
         </ProjectsWrapper>
       </Projects>
