@@ -57,6 +57,28 @@ const FAQContent = styled.div`
 
 const ContactContent = styled.div`
   ${tw`text-grey-light font-sans text-xl md:text-2xl lg:text-3xl`};
+  text-align: center;
+`;
+
+const ContactButton = styled.a`
+  display: inline-block;
+  color: white;
+  cursor: pointer;
+  padding: 16px;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  background: rgba(59, 173, 227, 1);
+  background: linear-gradient(
+    45deg,
+    rgba(59, 173, 227, 1) 0%,
+    rgba(87, 111, 230, 1) 25%,
+    rgba(152, 68, 183, 1) 51%,
+    rgba(255, 53, 127, 1) 100%
+  );
 `;
 
 const Footer = styled.footer`
@@ -72,7 +94,7 @@ const subtitleStyle = {};
 const Index = () => (
   <>
     <Layout />
-    <Parallax pages={6}>
+    <Parallax pages={5}>
       <Hero offset={0}>
         <BigTitle>
           <img src={hack3} style={logoStyle} />
@@ -162,24 +184,21 @@ const Index = () => (
       </FAQ>
       <Contact offset={4}>
         <Inner>
-          <Title>Get in touch</Title>
+          <Title>Registration</Title>
           <ContactContent>
             <p>
-              Got questions? Say <a href="mailto:head@hack3.co">hi via email</a>
-              , or sign up on our mailing list below to keep up with updates and
-              event details.
+              <ContactButton href="https://hack3boston.typeform.com/to/OMh8VL">
+                Pre-register now!
+              </ContactButton>
             </p>
 
-            <MailchimpForm />
+            <p>
+              Got questions? Say <a href="mailto:head@hack3.co">hi via email</a>
+              .
+            </p>
           </ContactContent>
         </Inner>
-        <Footer>
-          &copy; 2019 by Gatsby Starter Portfolio Cara.{" "}
-          <a href="https://github.com/LekoArts/gatsby-starter-portfolio-cara">
-            Github Repository
-          </a>
-          . Made by <a href="https://www.lekoarts.de">LekoArts</a>.
-        </Footer>
+        <Footer>&copy; 2019 Hack3 Team</Footer>
       </Contact>
     </Parallax>
   </>
