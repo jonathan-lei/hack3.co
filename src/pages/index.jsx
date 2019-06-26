@@ -49,6 +49,10 @@ const AboutSub = styled.span`
 
 const FAQContent = styled.div`
   ${tw`text-grey-light text-lg md:text-xl lg:text-2xl font-sans pt-6 md:pt-12 text-justify`};
+
+  dt {
+    font-weight: bold;
+  }
 `;
 
 const ContactContent = styled.div`
