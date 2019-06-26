@@ -1,0 +1,22 @@
+/* 300 px for input, 300 px for text */
+.form input {
+  width: 300px;
+  max-width: 100%;
+}
+.form {
+  text-align: right;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.submit {
+  text-align: center;
+}
+@media (max-width: 599px) {
+  .form {
+    text-align: left;
+  }
+  .form input {
+    display: block;
+    width: 100%;
+  }
+}
