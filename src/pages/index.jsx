@@ -76,7 +76,7 @@ const Index = () => (
         <BigTitle>
           <img src={hack3} style={logoStyle}/>
         </BigTitle>
-        <Subtitle style={subtitleStyle}>A new hackathon in the Boston area.</Subtitle>
+        <Subtitle style={subtitleStyle}>Experience Innovation</Subtitle>
       </Hero>
       <Projects offset={1}>
         <Title>Projects</Title>
