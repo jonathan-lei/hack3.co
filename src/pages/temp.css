@@ -1,0 +1,35 @@
+.faq {
+    background-image: linear-gradient(90deg, #8a88dc, #45cbfc);
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.faqOpen {
+    background-image: linear-gradient(90deg, #8a88dc, #45cbfc);
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* 
+.faqOuter {
+    margin-top: .5em;
+    background: #161719;
+    padding: .5em;
+    border-radius: 5px;
+} */
+
+.faqInner {
+    margin-top: .5em;
+    background: #161719;
+    padding: .5em;
+    border-radius: 5px;
+}
+
+.faqGradientText {
+    background-image: linear-gradient(90deg, #8a88dc, #45cbfc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

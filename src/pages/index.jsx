@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import tw from "tailwind.macro";
 import { Parallax } from "react-spring/renderprops-addons.cjs";
+import Collapsible from 'react-collapsible';
 
 // Components
 import Layout from "../components/Layout";
@@ -17,7 +18,7 @@ import Projects from "../views/Projects";
 import FAQ from "../views/FAQ";
 import Contact from "../views/Contact";
 
-import MailchimpForm from "../components/MailchimpForm";
+import styles from "./temp.css"
 
 import hack3 from "../images/Hack3_Bare.png";
 
@@ -35,20 +36,8 @@ const ProjectsWrapper = styled.div`
   }
 `;
 
-const AboutHero = styled.div`
-  ${tw`flex flex-col lg:flex-row items-center mt-8`};
-`;
-
-const Avatar = styled.img`
-  ${tw`rounded-full w-32 xl:w-48 shadow-lg h-auto`};
-`;
-
-const AboutSub = styled.span`
-  ${tw`text-white pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl`};
-`;
-
 const FAQContent = styled.div`
-  ${tw`text-grey-light text-lg md:text-xl lg:text-2xl font-sans pt-6 md:pt-12 text-justify`};
+  ${tw`text-grey-light text-lg md:text-xl lg:text-2xl font-mono pt-6 md:pt-12 text-justify`};
 
   dt {
     font-weight: bold;
@@ -135,51 +124,44 @@ const Index = () => (
       <FAQ offset={3}>
         <Title>FAQ</Title>
         <FAQContent>
-          <dl>
-            <dt>What is a Hackathon?</dt>
-            <dd>
-              A hackathon is a 24-48 hour long event where teams of people come
+          <Collapsible trigger="What is a Hackathon?" className="faq" openedClassName="faqOpen" contentOuterClassName="faqOuter" contentInnerClassName="faqInner">
+            <p className="faqGradientText">A hackathon is a 24-48 hour long event where teams of people come
               together to design and build something involving a novel use of
-              technology, usually centered around some theme.
-            </dd>
-            <dt>When and where is Hack3?</dt>
-            <dd>Coming soon!</dd>
-            <dt>Who should come to Hack3?</dt>
-            <dd>
-              High school students with an interest in technology or
-              programming.
-            </dd>
-            <dt>What should I bring?</dt>
-            <dd>Your laptop, charger and a sleeping bag.</dd>
-            <dt>Is there a place to sleep/eat?</dt>
-            <dd>
-              There will be a separate room for sleeping, and meals for the
+              technology, usually centered around some theme.</p>
+          </Collapsible>
+          <Collapsible trigger="Who should come to Hack3?" className="faq" openedClassName="faqOpen" contentOuterClassName="faqOuter" contentInnerClassName="faqInner">
+            <p className="faqGradientText">High school students with an interest in technology or
+              programming.</p>
+          </Collapsible>
+          <Collapsible trigger="What should I bring?" className="faq" openedClassName="faqOpen" contentOuterClassName="faqOuter" contentInnerClassName="faqInner">
+            <p className="faqGradientText">Your laptop, charger and a sleeping bag. We'll provide everything else!</p>
+          </Collapsible>
+          <Collapsible trigger="Is there a place to sleep/eat?" className="faq" openedClassName="faqOpen" contentOuterClassName="faqOuter" contentInnerClassName="faqInner">
+            <p className="faqGradientText">There will be a separate room for sleeping, and meals for the
               weekend (including snacks and drinks) will be provided free of
-              charge.
-            </dd>
-            <dt>How much experience do I need?</dt>
-            <dd>
-              No experience is needed! Anyone with an interest in the field can
-              come and participate.
-            </dd>
-            <dt>How do I form a team?</dt>
-            <dd>
-              We encourage you to form a team prior to the event itself.
+              charge!</p>
+          </Collapsible>
+          <Collapsible trigger="How much experience do I need?" className="faq" openedClassName="faqOpen" contentOuterClassName="faqOuter" contentInnerClassName="faqInner">
+            <p className="faqGradientText">No experience is needed! Anyone with an interest in the field can
+              come and participate.</p>
+          </Collapsible>
+          <Collapsible trigger="How do I form a team?" className="faq" openedClassName="faqOpen" contentOuterClassName="faqOuter" contentInnerClassName="faqInner">
+            <p className="faqGradientText">We encourage you to form a team prior to the event itself.
               However, it is possible to find a team at the event or even take
-              on the challenge on your own.
-            </dd>
-            <dt>Are there prizes?</dt>
-            <dd>
-              Yes! There are prizes for first, second and third place for each
-              of the three tracks, but you can only participate in one track.
-            </dd>
-            <dt>How is the winner determined?</dt>
-            <dd>
-              You will present your final product to a panel of judges who will
+              on the challenge on your own.</p>
+          </Collapsible>
+          <Collapsible trigger="How many people can be in a team?" className="faq" openedClassName="faqOpen" contentOuterClassName="faqOuter" contentInnerClassName="faqInner">
+            <p className="faqGradientText">4.</p>
+          </Collapsible>
+          <Collapsible trigger="Are there prizes?" className="faq" openedClassName="faqOpen" contentOuterClassName="faqOuter" contentInnerClassName="faqInner">
+            <p className="faqGradientText">Yes! There are prizes for first, second and third place for each
+              of the three tracks, but you can only participate in one track.</p>
+          </Collapsible>
+          <Collapsible trigger="How is the winner determined?" className="faq" openedClassName="faqOpen" contentOuterClassName="faqOuter" contentInnerClassName="faqInner">
+            <p className="faqGradientText">You will present your final product to a panel of judges who will
               determine winners based on creativity, how technically challenging
-              it was to create, and how much it fits the theme.
-            </dd>
-          </dl>
+              it was to create, and how much it fits the theme.</p>
+          </Collapsible>
         </FAQContent>
       </FAQ>
       <Contact offset={4}>
