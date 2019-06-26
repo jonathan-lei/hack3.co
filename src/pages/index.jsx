@@ -19,6 +19,8 @@ import Contact from '../views/Contact'
 
 import avatar from '../images/avatar.jpg'
 
+import hack3 from '../images/Hack3_Bare.png'
+
 const ProjectsWrapper = styled.div`
   ${tw`flex flex-wrap justify-between mt-8`};
   display: grid;
@@ -57,16 +59,24 @@ const Footer = styled.footer`
   ${tw`text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg`};
 `
 
+
+const logoStyle = {
+  width: '50%'
+};
+
+const subtitleStyle = {
+  
+};
+
 const Index = () => (
   <>
     <Layout />
     <Parallax pages={5}>
       <Hero offset={0}>
         <BigTitle>
-          Welcome to<br />
-          Hack3.
+          <img src={hack3} style={logoStyle}/>
         </BigTitle>
-        <Subtitle>A new hackathon in the Boston area.</Subtitle>
+        <Subtitle style={subtitleStyle}>A new hackathon in the Boston area.</Subtitle>
       </Hero>
       <Projects offset={1}>
         <Title>Projects</Title>

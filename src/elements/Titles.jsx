@@ -20,11 +20,15 @@ export const Title = styled.h1`
 `
 
 export const BigTitle = styled.h1`
-  ${tw`text-5xl lg:text-6xl font-serif text-white mb-6 tracking-wide`};
+  ${tw`text-5xl lg:text-6xl font-mono text-white mb-6 tracking-wide`};
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
 `
 
 export const Subtitle = styled.p`
-  ${tw`text-2xl lg:text-4xl font-sans text-white mt-8 xxl:w-3/4`};
+  ${tw`text-2xl lg:text-4xl font-mono mt-8 xxl:w-3/4`};
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+
+  background-image: linear-gradient(90deg, #8a88dc, #45cbfc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `
