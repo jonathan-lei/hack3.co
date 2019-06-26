@@ -14,13 +14,12 @@ import { Title, BigTitle, Subtitle } from "../elements/Titles";
 // Views
 import Hero from "../views/Hero";
 import Projects from "../views/Projects";
-import About from "../views/About";
+import FAQ from "../views/FAQ";
 import Contact from "../views/Contact";
 
-import avatar from "../images/avatar.jpg";
 import MailchimpForm from "../components/MailchimpForm";
 
-import hack3 from '../images/Hack3_Bare.png'
+import hack3 from "../images/Hack3_Bare.png";
 
 const ProjectsWrapper = styled.div`
   ${tw`flex flex-wrap justify-between mt-8`};
@@ -48,7 +47,7 @@ const AboutSub = styled.span`
   ${tw`text-white pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl`};
 `;
 
-const AboutDesc = styled.p`
+const FAQContent = styled.div`
   ${tw`text-grey-light text-lg md:text-xl lg:text-2xl font-sans pt-6 md:pt-12 text-justify`};
 `;
 
@@ -60,26 +59,22 @@ const Footer = styled.footer`
   ${tw`text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg`};
 `;
 
-
 const logoStyle = {
-  width: '50%'
+  width: "50%"
 };
 
-const subtitleStyle = {
-  
-};
+const subtitleStyle = {};
 
 const Index = () => (
   <>
     <Layout />
-    <Parallax pages={5}>
+    <Parallax pages={6}>
       <Hero offset={0}>
         <BigTitle>
-          <img src={hack3} style={logoStyle}/>
+          <img src={hack3} style={logoStyle} />
         </BigTitle>
         <Subtitle style={subtitleStyle}>
-          Experience Innovation <br/>
-          A new hackathon in the Boston area
+          Experience Innovation <br />A new hackathon in the Boston area
         </Subtitle>
       </Hero>
       <Projects offset={1}>
@@ -111,26 +106,56 @@ const Index = () => (
           </ProjectCard>
         </ProjectsWrapper>
       </Projects>
-      <About offset={3}>
-        <Title>About</Title>
-        <AboutHero>
-          <Avatar src={avatar} alt="John Doe" />
-          <AboutSub>
-            The English language can not fully capture the depth and complexity
-            of my thoughts. So I'm incorporating Emoji into my speech to better
-            express myself. Winky face.
-          </AboutSub>
-        </AboutHero>
-        <AboutDesc>
-          You know the way you feel when you see a picture of two otters holding
-          hands? That's how you're gonna feel every day. My mother cried the day
-          I was born because she knew she’d never be prettier than me. You
-          should make me your campaign manager. I was born for politics. I have
-          great hair and I love lying. Captain? The kids want to know where
-          Paulie the Pigeon is. I told them he got sucked up into an airplane
-          engine, is that all right?
-        </AboutDesc>
-      </About>
+      <FAQ offset={3}>
+        <Title>FAQ</Title>
+        <FAQContent>
+          <dl>
+            <dt>What is a Hackathon?</dt>
+            <dd>
+              A hackathon is a 24-48 hour long event where teams of people come
+              together to design and build something involving a novel use of
+              technology, usually centered around some theme.
+            </dd>
+            <dt>When and where is Hack3?</dt>
+            <dd>Coming soon!</dd>
+            <dt>Who should come to Hack3?</dt>
+            <dd>
+              High school students with an interest in technology or
+              programming.
+            </dd>
+            <dt>What should I bring?</dt>
+            <dd>Your laptop, charger and a sleeping bag.</dd>
+            <dt>Is there a place to sleep/eat?</dt>
+            <dd>
+              There will be a separate room for sleeping, and meals for the
+              weekend (including snacks and drinks) will be provided free of
+              charge.
+            </dd>
+            <dt>How much experience do I need?</dt>
+            <dd>
+              No experience is needed! Anyone with an interest in the field can
+              come and participate.
+            </dd>
+            <dt>How do I form a team?</dt>
+            <dd>
+              We encourage you to form a team prior to the event itself.
+              However, it is possible to find a team at the event or even take
+              on the challenge on your own.
+            </dd>
+            <dt>Are there prizes?</dt>
+            <dd>
+              Yes! There are prizes for first, second and third place for each
+              of the three tracks, but you can only participate in one track.
+            </dd>
+            <dt>How is the winner determined?</dt>
+            <dd>
+              You will present your final product to a panel of judges who will
+              determine winners based on creativity, how technically challenging
+              it was to create, and how much it fits the theme.
+            </dd>
+          </dl>
+        </FAQContent>
+      </FAQ>
       <Contact offset={4}>
         <Inner>
           <Title>Get in touch</Title>
