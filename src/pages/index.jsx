@@ -62,6 +62,7 @@ const ContactButton = styled.a`
   letter-spacing: 2px;
   text-align: center;
   background: rgba(59, 173, 227, 1);
+  border-radius: 8px;
   background: linear-gradient(
     45deg,
     rgba(59, 173, 227, 1) 0%,
