@@ -102,8 +102,8 @@ const Index = () => (
         <GradientTitle>About Hack3</GradientTitle>
         <AboutText>
         Hack3 is a fun, 24-48 hour hackathon made for high school students, both new and experienced. 
-        During this time you will develop and present a project for cool prizes, but most importantly, 
-        you will learn new and useful skills that will help you on your computer science journey.
+        During this time you will develop and present a project for cool prizes.
+        Most importantly, you will learn new and useful skills that will help you on your computer science journey.
         </AboutText>
         <GradientTitle>Our Goal</GradientTitle>
         <AboutText>
