@@ -89,7 +89,7 @@ const subtitleStyle = {};
 const Index = () => (
   <>
     <Layout />
-    <Parallax pages={5}>
+    <Parallax pages={6}>
       <Hero offset={0}>
         <BigTitle>
           <img src={hack3} style={logoStyle} />
