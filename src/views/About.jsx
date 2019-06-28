@@ -18,14 +18,14 @@ const About = ({ children, offset }) => (
     />
     <Divider speed={0.1} offset={offset}>
       <UpDown>
-        <SVG
+        {/* <SVG
           icon="box"
           hiddenMobile
           width={6}
           fill={colors["blue-light"]}
           left="50%"
           top="75%"
-        />
+        /> */}
         <SVG
           icon="upDown"
           hiddenMobile
