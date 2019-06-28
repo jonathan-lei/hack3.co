@@ -10,13 +10,14 @@ import ProjectCard from "../components/ProjectCard";
 
 // Elements
 import Inner from "../elements/Inner";
-import { Title, BigTitle, Subtitle } from "../elements/Titles";
+import { Title, GradientTitle, BigTitle, Subtitle } from "../elements/Titles";
 
 // Views
 import Hero from "../views/Hero";
 import Projects from "../views/Projects";
 import FAQ from "../views/FAQ";
 import Contact from "../views/Contact";
+import About from "../views/About";
 
 import styles from "./temp.css"
 
@@ -70,6 +71,11 @@ const ContactButton = styled.a`
   );
 `;
 
+const AboutText = styled.p`
+  ${tw`text-xl lg:text-2xl font-mono mt-8 xxl:w-3/4`};
+  color: white;
+`;
+
 const Footer = styled.footer`
   ${tw`text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg`};
 `;
@@ -92,7 +98,25 @@ const Index = () => (
           Experience Innovation <br />A new hackathon in the Boston area
         </Subtitle>
       </Hero>
-      <Projects offset={1}>
+      <About offset={1}>
+        <GradientTitle>About Hack3</GradientTitle>
+        <AboutText>
+        Hack3 is fun a 24-hour hackathon made for high school students, both new and experienced. 
+        During this time you will develop and present a project for cool prizes, but most importantly, 
+        you will learn new and useful skills that will help you on your computer science journey.
+        </AboutText>
+        <GradientTitle>Our Goal</GradientTitle>
+        <AboutText>
+        Every colored pixel on your screen is a result of millions of switches being triggered. 
+        These switches are responsible for animations, games, and simulations such as protein folding. 
+        Yet, most do not understand how intricate and powerful the device they type on or hold really is. 
+
+        <br /><br />
+        These powers are concentrated in the hands of a few.
+        We are aiming to give the underrepresented the power to use new and emerging technologies to benefit themselves and the world.
+        </AboutText>
+      </About>
+      <Projects offset={2}>
         <Title>Important Info</Title>
         <ProjectsWrapper>
           <ProjectCard
@@ -121,7 +145,7 @@ const Index = () => (
           </ProjectCard>
         </ProjectsWrapper>
       </Projects>
-      <FAQ offset={3}>
+      <FAQ offset={4}>
         <Title>FAQ</Title>
         <FAQContent>
           <Collapsible trigger="What is a Hackathon?" className="faq" openedClassName="faqOpen" contentOuterClassName="faqOuter" contentInnerClassName="faqInner">
@@ -164,7 +188,7 @@ const Index = () => (
           </Collapsible>
         </FAQContent>
       </FAQ>
-      <Contact offset={4}>
+      <Contact offset={5}>
         <Inner>
           <Title>Registration</Title>
           <ContactContent>
