@@ -199,6 +199,8 @@ const Index = () => (
               </ContactButton>
             </p>
 
+            <p>And remember to join our <a href="https://discord.gg/jcvTJpn">Discord server</a>!</p>
+
             <p>
               Got questions? Say <a href="mailto:head@hack3.co">hi via email</a>
               .
