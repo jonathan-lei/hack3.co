@@ -73,7 +73,7 @@ const ContactButton = styled.a`
   -webkit-text-fill-color: initial;
 `;
 
-const AboutText = styled.p`
+const AboutContent = styled.div`
   ${tw`text-xl lg:text-2xl font-mono mt-8 xxl:w-3/4`};
   color: white;
 `;
@@ -97,7 +97,9 @@ const Index = () => (
           <img src={hack3} style={logoStyle} />
         </BigTitle>
         <Subtitle style={subtitleStyle}>
-          <p>Experience Innovation <br />A new hackathon in the Boston area</p>
+          <p>
+            Experience Innovation <br />A new hackathon in the Boston area
+          </p>
           <p style={{ textAlign: "center" }}>
             <ContactButton href="https://hack3boston.typeform.com/to/OMh8VL">
               Pre-register now!
@@ -111,25 +113,55 @@ const Index = () => (
       </Hero>
       <About offset={1}>
         <GradientTitle>About Hack3</GradientTitle>
-        <AboutText>
-          Hack3 is a fun, 24-48 hour hackathon made for high school students,
-          both new and experienced. During this time you will develop and
-          present a project for cool prizes. Most importantly, you will learn
-          new and useful skills that will help you on your computer science
-          journey.
-        </AboutText>
+        <AboutContent>
+          <p>
+            Hack3 is a fun, 24-48 hour hackathon made for high school students,
+            both new and experienced. During this time you will develop and
+            present a project for cool prizes. Most importantly, you will learn
+            new and useful skills that will help you on your computer science
+            journey.
+          </p>
+        </AboutContent>
         <GradientTitle>Our Goal</GradientTitle>
-        <AboutText>
-          Every colored pixel on your screen is a result of millions of switches
-          being triggered. These switches are responsible for animations, games,
-          and simulations such as protein folding. Yet, most do not understand
-          how intricate and powerful the device they type on or hold really is.
-          <br />
-          <br />
-          These powers are concentrated in the hands of a few. We are aiming to
-          give the underrepresented the power to use new and emerging
-          technologies to benefit themselves and the world.
-        </AboutText>
+        <AboutContent>
+          <p>
+            Every colored pixel on your screen is a result of millions of
+            switches being triggered. These switches are responsible for
+            animations, games, and simulations such as protein folding. Yet,
+            most do not understand how intricate and powerful the device they
+            type on or hold really is.
+          </p>
+
+          <p>
+            These powers are concentrated in the hands of a few. We are aiming
+            to give the underrepresented the power to use new and emerging
+            technologies to benefit themselves and the world.
+          </p>
+        </AboutContent>
+        <GradientTitle>Tracks</GradientTitle>
+        <AboutContent>
+          <ol>
+            <li>
+              <p>
+                <strong>Recreation</strong>: build a virtual world better than
+                the real one. Program games or multimedia experiences.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Hype Tech</strong>: use the latest in cutting-edge
+                technologies to create a cool application. Use blockchain or
+                machine learning.
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Real World</strong>: use technology to affect the real
+                world! E.g. medicine or globalization.
+              </p>
+            </li>
+          </ol>
+        </AboutContent>
       </About>
       <Projects offset={2}>
         <Title>Important Info</Title>
