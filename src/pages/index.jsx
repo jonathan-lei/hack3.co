@@ -61,15 +61,8 @@ const ContactButton = styled.a`
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: center;
-  background: rgba(59, 173, 227, 1);
+  background: linear-gradient(90deg, #8a88dc, #45cbfc);
   border-radius: 8px;
-  background: linear-gradient(
-    45deg,
-    rgba(59, 173, 227, 1) 0%,
-    rgba(87, 111, 230, 1) 25%,
-    rgba(152, 68, 183, 1) 51%,
-    rgba(255, 53, 127, 1) 100%
-  );
   -webkit-text-fill-color: initial;
 `;
 
@@ -100,7 +93,7 @@ const Index = () => (
           <p>
             Experience Innovation <br />A new hackathon in the Boston area
           </p>
-          <p style={{ textAlign: "center" }}>
+          <p>
             <ContactButton href="https://hack3boston.typeform.com/to/OMh8VL">
               Pre-register now!
             </ContactButton>
@@ -112,7 +105,7 @@ const Index = () => (
         </Subtitle>
       </Hero>
       <About offset={1}>
-        <GradientTitle>About Hack3</GradientTitle>
+        <GradientTitle>What is Hack3</GradientTitle>
         <AboutContent>
           <p>
             Hack3 is a fun, 24-48 hour hackathon made for high school students,
@@ -124,19 +117,7 @@ const Index = () => (
         </AboutContent>
         <GradientTitle>Our Goal</GradientTitle>
         <AboutContent>
-          <p>
-            Every colored pixel on your screen is a result of millions of
-            switches being triggered. These switches are responsible for
-            animations, games, and simulations such as protein folding. Yet,
-            most do not understand how intricate and powerful the device they
-            type on or hold really is.
-          </p>
-
-          <p>
-            These powers are concentrated in the hands of a few. We are aiming
-            to give the underrepresented the power to use new and emerging
-            technologies to benefit themselves and the world.
-          </p>
+        In the palm of their hands, students hold a computer a thousand times faster than the Apollo Guidance Computer used to land men on the moon. Yet, this incredible power remains mostly untapped. Most students use technology solely to consume, not create. Meanwhile, instead of bringing positive change, tech companies and governments have abused these advances to eliminate consumer independence and avoid giving back to the coding community. We need to nurture a new generation of ethic-conscious and determined programmers and give them the ability to make change for good. Our aim is to provide an opportunity for aspiring leaders of the tech world to bring their own ideas to fruition and create a better world for future generations.
         </AboutContent>
         <GradientTitle>Tracks</GradientTitle>
         <AboutContent>
