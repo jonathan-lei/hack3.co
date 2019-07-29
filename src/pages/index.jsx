@@ -14,7 +14,7 @@ import { Title, GradientTitle, BigTitle, Subtitle } from "../elements/Titles";
 
 // Views
 import Hero from "../views/Hero";
-import Projects from "../views/Projects";
+import BlueSection from "../views/BlueSection";
 import FAQ from "../views/FAQ";
 import Contact from "../views/Contact";
 import About from "../views/About";
@@ -22,6 +22,7 @@ import About from "../views/About";
 import styles from "./temp.css";
 
 import hack3 from "../images/Hack3_Bare.png";
+import OurTeam from "../views/OurTeam";
 
 const ProjectsWrapper = styled.div`
   ${tw`flex flex-wrap justify-between mt-8`};
@@ -84,7 +85,7 @@ const subtitleStyle = {};
 const Index = () => (
   <>
     <Layout />
-    <Parallax pages={6}>
+    <Parallax pages={8}>
       <Hero offset={0}>
         <BigTitle>
           <img src={hack3} style={logoStyle} />
@@ -117,7 +118,17 @@ const Index = () => (
         </AboutContent>
         <GradientTitle>Our Goal</GradientTitle>
         <AboutContent>
-        In the palm of their hands, students hold a computer a thousand times faster than the Apollo Guidance Computer used to land men on the moon. Yet, this incredible power remains mostly untapped. Most students use technology solely to consume, not create. Meanwhile, instead of bringing positive change, tech companies and governments have abused these advances to eliminate consumer independence and avoid giving back to the coding community. We need to nurture a new generation of ethic-conscious and determined programmers and give them the ability to make change for good. Our aim is to provide an opportunity for aspiring leaders of the tech world to bring their own ideas to fruition and create a better world for future generations.
+          In the palm of their hands, students hold a computer a thousand times
+          faster than the Apollo Guidance Computer used to land men on the moon.
+          Yet, this incredible power remains mostly untapped. Most students use
+          technology solely to consume, not create. Meanwhile, instead of
+          bringing positive change, tech companies and governments have abused
+          these advances to eliminate consumer independence and avoid giving
+          back to the coding community. We need to nurture a new generation of
+          ethic-conscious and determined programmers and give them the ability
+          to make change for good. Our aim is to provide an opportunity for
+          aspiring leaders of the tech world to bring their own ideas to
+          fruition and create a better world for future generations.
         </AboutContent>
         <GradientTitle>Tracks</GradientTitle>
         <AboutContent>
@@ -144,7 +155,7 @@ const Index = () => (
           </ol>
         </AboutContent>
       </About>
-      <Projects offset={2}>
+      <BlueSection offset={2}>
         <Title>Important Info</Title>
         <ProjectsWrapper>
           <ProjectCard
@@ -172,7 +183,7 @@ const Index = () => (
             Prizes willl be posted
           </ProjectCard>
         </ProjectsWrapper>
-      </Projects>
+      </BlueSection>
       <FAQ offset={4}>
         <Title>FAQ</Title>
         <FAQContent>
@@ -287,7 +298,8 @@ const Index = () => (
           </Collapsible>
         </FAQContent>
       </FAQ>
-      <Contact offset={5}>
+      <OurTeam offset={5} />
+      <Contact offset={7}>
         <Inner>
           <Title>Contact</Title>
           <ContactContent>
