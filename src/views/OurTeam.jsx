@@ -67,6 +67,7 @@ export default ({ offset }) => (
         picture={Steven}
         role="Director of Marketing"
         email="stevenli@hack3.co"
+        linkedin="https://www.linkedin.com/in/steven-li-08948418b/"
       ></TeamMember>
       <TeamMember
         name="Kevin Liu"
