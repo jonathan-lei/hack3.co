@@ -1,69 +1,54 @@
 {{ $header := .Site.Data.header }}
 {{- $logoSrc := printf "images/%s" $header.logo | absURL -}}
 
-{{ if .Scratch.Get "navbarType" }}
+<nav class="navbar nav-transparent navbar-expand-lg navbar-dark fixed-top">
+  <!-- <div class="backdrop-blur"></div> -->
+  <a class="navbar-brand hide-text" href="{{.Site.BaseURL}}">Hack3</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-  {{ if eq (.Scratch.Get "navbarType") "transparent" }}
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      {{ range $header.links }}
 
-    <nav class="navbar nav-transparent navbar-expand-lg navbar-dark fixed-top">
-      <!-- <div class="backdrop-blur"></div> -->
-      <a class="navbar-brand" href="{{.Site.BaseURL}}"><img src="{{$logoSrc}}" height="40px"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <li class="nav-item">
+        <a class="nav-link" href="{{.Site.BaseURL}}{{ .href }}">{{ .title }}</a>
+      </li>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-         
-          {{ range $header.links }}
+      {{ end }}
+    </ul>
+    <ul class="ml-auto navbar-nav">
+      {{ range $key, $value := .Site.Data.social }}
+      <li class="nav-item" style="font-size: 22px">
+        <a href="https://{{ $key }}.com/{{ $value }}" class="ml-3 text-white btn-{{ $key }}"><i
+            class="fab fa-{{ $key }}"></i></a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</nav>
+<style>
+  .hide-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
 
-              <li class="nav-item">
-                <a class="nav-link" href="{{.Site.BaseURL}}{{ .href }}">{{ .title }}</a>
-              </li>
-              
-            
-          {{ end }}
-        </ul>
-        <ul class="ml-auto navbar-nav">
-          
-            {{ range $key, $value := .Site.Data.social }}
-            <li class="nav-item" style="font-size: 22px">
-              <a href="https://{{ $key }}.com/{{ $value }}" class="ml-3 text-white btn-{{ $key }}"><i class="fab fa-{{ $key }}"></i></a>
-            </li>
-            {{ end }}
-          
-        </ul>
-      </div>
-    </nav>
-  {{ end }}
-{{ else }}
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white nav-shadow">
-      <!-- <div class="backdrop-blur"></div> -->
-      <a class="navbar-brand" href="/"><img src="{{$logoSrc}}" height="40px"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  .navbar-dark .navbar-brand {
+    background-image: url(/images/hack3_horizontal.png);
+    width: 100px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-         
-          {{ range $header.links }}
-
-              <li class="nav-item">
-                <a class="nav-link" href="{{.Site.BaseURL}}{{ .href | relURL }}">{{ .title }}</a>
-              </li>
-            
-          {{ end }}
-        </ul>
-        <ul class="ml-auto navbar-nav">
-          
-            {{ range $key, $value := .Site.Data.social }}
-            <li class="nav-item" style="font-size: 22px">
-              <a href="https://{{ $key }}.com/{{ $value }}" class="ml-3 btn-{{$key}}"><i class="fab fa-{{ $key }}"></i></a>
-            </li>
-            {{ end }}
-          
-        </ul>
-      </div>
-    </nav>    
-{{ end }}
+  .navbar-light .navbar-brand {
+    background-image: url(/images/hack3_horizontal_gradient.png);
+    width: 100px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+</style>

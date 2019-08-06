@@ -1,14 +1,14 @@
 {
-  "brand" : "Sodium Theme",
-  "logo" : "logo-black.svg",
+  "brand" : "Hack3",
+  "logo" : "hack3-white.png",
   "links" : [
     {
       "title" : "Home",
       "href" : ""
     },
     {
-      "title" : "Features",
-      "href" : "#features"
+      "title" : "Tracks",
+      "href" : "#tracks"
     },
     {
       "title" : "Pricing",

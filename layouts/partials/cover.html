@@ -4,9 +4,11 @@
   <div class="container h-100">
     <div class="d-flex h-100 align-items-center">
       <div class="">
-          <h1 class="h1 text-light">Hack3</h1>
-          <p class="text-light sub-heading">Hackathon in the Boston Area</p>
-          <a href="{{ $cover.button.href }}" class="btn btn-outline-light">{{ $cover.button.text }}</a>      
+          <h1 class="h1 text-light"><img width="300" src="/images/hack3-white.png" alt="Hack3"></h1>
+          <p class="text-light h3">Experience Innovation</p>
+          <p class="text-light sub-heading">A New Hackathon in the Boston Area</p>
+          <a href="#contact" class="btn btn-outline-light">Pre-register Now</a>
+          <a href="https://discord.gg/jcvTJpn" class="btn btn-outline-light">Join Discord</a>
       </div>
       <!-- <div class="col-12 col-lg-6 col-md-6 col-sm-12"> -->
           <!-- <img src="/images/cover.svg" class="float-right" style="max-width: 100%"> -->
@@ -20,11 +22,7 @@
   .cover{
     margin-top: -80px;
     height: 500px;
-    background: rgba(0,0,0,0.6);
-    background-image: url('{{.Site.BaseURL}}images/covers/{{$cover.image}}');
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0, 0, 0, 0.4)),  url('{{.Site.BaseURL}}images/covers/{{$cover.image}}');
-        background-position: center;
-        background-attachment: fixed;
+    background-image: linear-gradient(to right, #8e86da, #48c8fb);
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
     /*animation: breath 25s ease-in-out infinite;*/

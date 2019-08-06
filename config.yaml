@@ -1,7 +1,7 @@
-baseURL : https://demo.uicard.io/hugo-sodium/
+baseURL : /
 languageCode : en-us
-title : Sodium
-theme : hugo-sodium-free
+title : Hack3 - Experience Innovation
+theme : sodium-theme
 
 taxonomies:
   category: categories
