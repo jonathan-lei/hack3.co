@@ -7,12 +7,16 @@
       "href" : ""
     },
     {
-      "title" : "Tracks",
-      "href" : "#tracks"
+      "title" : "Important Info",
+      "href" : "#info"
     },
     {
-      "title" : "Pricing",
-      "href" : "#pricing"
+      "title" : "FAQ",
+      "href" : "#faq"
+    },
+    {
+      "title" : "Team",
+      "href" : "#team"
     },
     {
       "title" : "Contact",
