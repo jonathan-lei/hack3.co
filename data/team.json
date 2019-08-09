@@ -1,21 +1,42 @@
 {
-  "title" : "Our team is amazing",
-  "description" : "Our headquarter is located in Gurgaon",
+  "title" : "Our Team",
+  "description" : "Our team is composed of experienced hackathon attendees dedicated to making Hack3 a success!",
   "members" : [
     {
-      "name" : "Avatar 1",
-      "description" : "CEO",
-      "avatar" : "dog1.jpg"
+      "name" : "Steven Li",
+      "description" : "Director of Marketing",
+      "avatar" : "/images/team/Steven.jpg",
+      "contact": {
+        "email": "stevenli@hack3.co",
+        "linkedin": "https://www.linkedin.com/in/steven-li-08948418b/"
+      }
     },
     {
-      "name" : "Avatar 2",
-      "description" : "Content Writer",
-      "avatar" : "dog2.jpg"
+      "name" : "Aneesh Edara",
+      "description" : "Director of Finance",
+      "avatar" : "/images/team/Aneesh.jpg",
+      "contact": {
+        "email": "aneeshedara@hack3.co",
+        "linkedin": "https://www.linkedin.com/in/aneesh-edara/"
+      }
     },
     {
-      "name" : "Avatar 3",
-      "description" : "CEO",
-      "avatar" : "dog3.jpg"
+      "name" : "Kevin Liu",
+      "description" : "Director of Logistics",
+      "avatar" : "/images/team/Kevin.jpg",
+      "contact": {
+        "email": "kevinliu@hack3.co",
+        "linkedin": "https://www.linkedin.com/in/the-kevin-liu/"
+      }
+    },
+    {
+      "name" : "Ralph Zhang",
+      "description" : "Director of Hacker Experience",
+      "avatar" : "/images/team/Ralph.jpg",
+      "contact": {
+        "email": "yikunzhang@hack3.co",
+        "linkedin": "https://www.linkedin.com/in/yikun-zhang-b7a89a18a/"
+      }
     }
   ]
 }
