@@ -1,0 +1,25 @@
+{
+  "title" : "Important Info",
+  "content" : [
+    {
+      "title" : "Date",
+      "headline" : "October 2019",
+      "description": "Exact date will be determined"
+    },
+    {
+      "title" : "Location",
+      "headline" : "Boston Area",
+      "description": "Exact location to be determined"
+    },
+    {
+      "title" : "Headcount",
+      "headline" : "> 150 Hackers",
+      "description": "Live headcount will be posted"
+    },
+    {
+      "title" : "Prizes",
+      "headline" : "$X of Prizes",
+      "description": "Prizes will be posted"
+    }
+  ]
+}
