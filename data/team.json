@@ -1,38 +1,37 @@
 {
-  "title" : "Our Team",
-  "description" : "Our team is composed of experienced hackathon attendees dedicated to making Hack3 a success!",
-  "members" : [
-    {
-      "name" : "Steven Li",
-      "description" : "Director of Marketing",
-      "avatar" : "/images/team/Steven.jpg",
+  "title": "Our Team",
+  "description": "Our team is composed of experienced hackathon attendees dedicated to making Hack3 a success!",
+  "members": [{
+      "name": "Steven Li",
+      "description": "Director of Marketing",
+      "avatar": "/images/team/Steven.jpg",
       "contact": {
         "email": "stevenli@hack3.co",
         "linkedin": "https://www.linkedin.com/in/steven-li-08948418b/"
       }
     },
     {
-      "name" : "Aneesh Edara",
-      "description" : "Director of Finance",
-      "avatar" : "/images/team/Aneesh.jpg",
+      "name": "Aneesh Edara",
+      "description": "Director of Sponsorships",
+      "avatar": "/images/team/Aneesh.png",
       "contact": {
         "email": "aneeshedara@hack3.co",
         "linkedin": "https://www.linkedin.com/in/aneesh-edara/"
       }
     },
     {
-      "name" : "Kevin Liu",
-      "description" : "Director of Logistics",
-      "avatar" : "/images/team/Kevin.jpg",
+      "name": "Kevin Liu",
+      "description": "Director of Logistics",
+      "avatar": "/images/team/Kevin.jpg",
       "contact": {
         "email": "kevinliu@hack3.co",
         "linkedin": "https://www.linkedin.com/in/the-kevin-liu/"
       }
     },
     {
-      "name" : "Ralph Zhang",
-      "description" : "Director of Hacker Experience",
-      "avatar" : "/images/team/Ralph.jpg",
+      "name": "Ralph Zhang",
+      "description": "Director of Finance",
+      "avatar": "/images/team/Ralph.jpg",
       "contact": {
         "email": "yikunzhang@hack3.co",
         "linkedin": "https://www.linkedin.com/in/yikun-zhang-b7a89a18a/"
