@@ -36,6 +36,32 @@
         "email": "yikunzhang@hack3.co",
         "linkedin": "https://www.linkedin.com/in/yikun-zhang-b7a89a18a/"
       }
+    },
+    {
+      "name": "Judy Li",
+      "description": "Social Media Manager",
+      "contact": {
+      }
+    },
+    {
+      "name": "Shashank Sastry",
+      "description": "Venue and Judge Coordinator",
+      "avatar": "/images/team/Shashank.jpg",
+      "contact": {
+        "email": "shashanksastry@hack3.co"
+      }
+    },
+    {
+      "name": "Jonathan Lei",
+      "description": "Co-organizer"
+    },
+    {
+      "name": "Vid Suresh",
+      "description": "Co-organizer"
+    },
+    {
+      "name": "Kunal Sharda",
+      "description": "Co-organizer"
     }
   ]
 }

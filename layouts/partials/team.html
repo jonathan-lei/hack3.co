@@ -7,14 +7,22 @@
     <div class="members row mt-5" style="justify-content: space-around">
       {{ range $team.members }}
       <div class="col-5 col-lg-2 col-md-3 col-sm-2">
-        <img data-toggle="tooltip" title="{{ .name }}" class="mb-3 teamAvatar" src="{{.Site.BaseURL}}{{.avatar }}"
+        <img data-toggle="tooltip" title="{{ .name }}"
+          class="mb-3 teamAvatar"
+          src='{{.Site.BaseURL}}{{ default "/images/team/none.jpg" .avatar }}'
           alt="{{ .name }}">
         <h4 class="h4">{{ .name }}</h4>
         <p class="text-muted">{{ .description }}</p>
         <p class="text-muted">
+          {{ if .contact.linkedin }}
           <a href="{{ .contact.linkedin }}"><i class="fab fa-linkedin-in"></i></a>
+          {{ end }}
+          {{ if and (.contact.email) (.contact.linkedin) }}
           &middot;
+          {{ end }}
+          {{ if .contact.email }}
           <a href="mailto:{{ .contact.email }}"><i class="fas fa-envelope"></i></a></p>
+          {{ end }}
       </div>
       {{ end }}
     </div>
