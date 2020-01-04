@@ -53,15 +53,18 @@
     },
     {
       "name": "Jonathan Lei",
-      "description": "Co-organizer"
+      "description": "Co-organizer",
+      "avatar": "/images/team/Jonathan.jpg"
     },
     {
       "name": "Vid Suresh",
-      "description": "Co-organizer"
+      "description": "Co-organizer",
+      "avatar": "/images/team/Vid.jpg"
     },
     {
       "name": "Kunal Sharda",
-      "description": "Co-organizer"
+      "description": "Advisor and Mentor",
+      "avatar": "/images/team/Kunal.jpg"
     }
   ]
 }
